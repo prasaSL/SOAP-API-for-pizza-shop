@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" style="background-color: rgb(3, 3, 43);">
+
+    <title>prasa pizza </title>
+     <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+      .card{
+-webkit-box-shadow: 0px 22px 5px 4px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 22px 5px 4px rgba(0,0,0,0.58);
+box-shadow: 0px 22px 5px 4px rgba(0,0,0,0.58);
+      }
+        body {
+            background-color: rgb(3, 3, 43);
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+      
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</body>
+     <asp:ContentPlaceHolder id="footer" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</html>
